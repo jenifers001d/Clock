@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #293B29;
+    width: 1280px;
+    height: 800px;
+}
+
+.clock {
+    border: 1px solid white;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+img:first-of-type {
+    flex: none;
+}
+
+img:nth-of-type(2) {
+    position: absolute;
+    top: 394px;
+    left: 636px;
+    transform-origin: 4px;
+}
+
+img:nth-of-type(3) {
+    position: absolute;
+    top: 307px;
+    left: 636px;
+    transform-origin: 4px 92px;
+}
+
+img:nth-of-type(4) {
+    position: absolute;
+    top: 396px;
+    left: 634px;
+    transform-origin: 6px 0px;
+}
