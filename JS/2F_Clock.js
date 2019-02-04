@@ -1,6 +1,4 @@
-console.log(Date.now());
 let hands = document.getElementsByTagName("img");
-console.log(hands);
 
 function clock() {
     // 因為setInterval會過一秒才開始執行，所以先執行一次
