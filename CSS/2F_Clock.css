@@ -6,15 +6,20 @@
 
 body {
     background-color: #293B29;
-    width: 1280px;
-    height: 800px;
+    /*width: 1280px; 改成隨意調整瀏覽器寬度，時鐘都會維持在中間*/
+    max-height: 800px;
 }
 
 .clock {
-    border: 1px solid white;
-    height: 800px;
+    /*    height: 800px;*/
+    /*時鐘大小符合瀏覽器寬度和高度*/
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    /*位置在，瀏覽器寬度中間*/
     justify-content: center;
+    /*位置在，瀏覽器高度中間*/
+    align-items: center;
 }
 
 img:first-of-type {
@@ -23,21 +28,19 @@ img:first-of-type {
 
 img:nth-of-type(2) {
     position: absolute;
-    top: 394px;
-    left: 636px;
+    top: calc(50vh - 6px);
+    left: 50vw;
     transform-origin: 4px;
 }
 
 img:nth-of-type(3) {
     position: absolute;
-    top: 307px;
-    left: 636px;
+    top: calc(50vh - 94.5px);
     transform-origin: 4px 92px;
 }
 
 img:nth-of-type(4) {
     position: absolute;
-    top: 396px;
-    left: 634px;
+    top: calc(50vh - 3px);
     transform-origin: 6px 0px;
 }
